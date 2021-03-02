@@ -1,0 +1,26 @@
+.clock_container {
+  margin: auto;
+  border: 2px solid black;
+  padding: 20px;
+  width: 400px;
+  height: 200px;
+  background-color: papayawhip;
+}
+
+.time {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clock {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.label, h1 {
+  font-family: sans-serif;
+}

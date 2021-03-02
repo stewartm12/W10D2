@@ -9,6 +9,7 @@ class Clock extends React.Component {
             secs: this.time.getSeconds(),
             mins: this.time.getMinutes(),
             hours: this.time.getHours(),
+            date: this.time.toDateString()
         }
 
         this.tick = this.tick.bind(this)
@@ -49,12 +50,20 @@ class Clock extends React.Component {
 
 
     render() {
-        const { secs, hours, mins } = this.state;
+        const { secs, hours, mins, date } = this.state;
 
         return (
-            <>
-                <h1>{hours}:{mins}:{secs}</h1>
-            </>
+            <div className="clock_container">
+                <h1>Our Clock</h1>
+                <div className="time">
+                    <h2 className="label">Time:</h2>
+                    <h2 className="clock">{hours}:{mins}:{secs}</h2>
+                </div>
+                <div className="date">
+                    <h2 className="label">Date:</h2>
+                    <h2 className="clock">{date}</h2>
+                </div>
+            </div>
         )
     }
 }
