@@ -1,7 +1,10 @@
 import React from 'react';
+import Clock from './clock';
 
 const Root = ()=> (
-  <h1>Hello world!</h1>
+  <div>
+    <Clock/>
+  </div>
 )
 
 export default Root;
